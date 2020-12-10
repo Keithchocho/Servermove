@@ -4,23 +4,17 @@ public class java1009 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		var reverseNum = "";
-		var plusNum = 0;
+		int max = 0;
+		int[] array = { 1, 5, 8, 3,2};
 		
-		var numStr = args + "";
-		
-		for(var i = 0; i < numStr.length(); i++) {
+		for(int i = 0; i<array.length; i++) {
+			if(array[i] > max) {
+				max = array[i];
 			
-			var nThNum =
-			reverseNum.charAt(i);
-			reverseNum =
-			nThNum + reverseNum;
-			
-			plusNum =
-			plusNum + (nThNum);
+			}
 		}
 		
-		System.out.println(reverseNum + " " + plusNum);
+				System.out.println("max:" + max);
 	}
 
 }
